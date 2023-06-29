@@ -1,0 +1,43 @@
+### Creating a new user using signup
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email" : "shahvaibhav.732@gmail.com",
+    "password" : "Shah@111123"
+}
+
+### Get the currently signin User 
+
+GET http://localhost:3000/auth/whoami
+
+### signout
+POST http://localhost:3000/auth/signout
+
+### Validating signin using signin
+
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email" : "shahvaibhav.732@gmail.com",
+    "password" : "Shah@111123"
+}
+### find a user with an id 
+
+GET http://localhost:3000/auth/4
+
+### Find all user with an email
+GET http://localhost:3000/auth?email=Vaibhavshah2002@gmail.com
+
+
+### Delete an User
+DELETE  http://localhost:3000/auth/5
+
+### Updating an User
+PATCH http://localhost:3000/auth/4
+Content-Type: application/json
+
+{
+    "email" : "shahvaibhav.555@gmail.com"
+}

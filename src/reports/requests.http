@@ -1,0 +1,29 @@
+###Creating the Report
+
+POST http://localhost:3000/reports
+Content-Type: application/json
+
+{
+    "company": "Bajaj",
+    "model" : "Pulsar-NS-200",
+    "year" : 2023,
+    "mileage" : 16.5,
+    "lng" : 0,
+    "lat" : 0,
+    "price" : 2150000
+
+}
+
+
+### approving an user 
+ 
+PATCH http://localhost:3000/reports/10
+content-type: application/json
+
+{
+    "approved" : false
+}
+
+
+### Get an Estimate
+GET http://localhost:3000/reports?company=Bajaj&model=Pulsar-NS-200&lng=0&lat=0&year=2018&mileage=14.2
