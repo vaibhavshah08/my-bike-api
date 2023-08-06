@@ -1,4 +1,7 @@
-
+## Required package before running
+```bash
+$ npm i cross-env
+```
 
 ## Installation
 
